@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Heading, Input, List, ListItem, VStack, HStack, IconButton, useToast } from "@chakra-ui/react";
 import { FaPlus, FaTrash } from "react-icons/fa";
 import Advertisement from "./Advertisement";
+import MotivationalQuote from "../components/MotivationalQuote";
 
 const Index = () => {
   const [todos, setTodos] = useState([]);
@@ -39,6 +40,7 @@ const Index = () => {
   return (
     <VStack p={8}>
       <Heading mb="8">Todo App</Heading>
+      <MotivationalQuote />
       <HStack>
         <Input value={inputValue} onChange={handleInputChange} onKeyPress={handleKeyPress} placeholder="Add a new task..." bg="white" color="black" />
         <IconButton
