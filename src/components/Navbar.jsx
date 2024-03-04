@@ -12,6 +12,12 @@ const Navbar = () => {
       </Box>
       <Spacer />
       <Box p="2">
+        <Link as={RouterLink} to="/gambling" _hover={{ textDecoration: "none" }}>
+          Gambling
+        </Link>
+      </Box>
+      <Spacer />
+      <Box p="2">
         <Link as={RouterLink} to="/about" _hover={{ textDecoration: "none" }}>
           About
         </Link>
