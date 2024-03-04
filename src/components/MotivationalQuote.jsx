@@ -10,7 +10,9 @@ const MotivationalQuote = () => {
       <Text fontSize="xl" fontWeight="bold">
         Motivational Quote
       </Text>
-      <Text fontStyle="italic">"{randomQuote}"</Text>
+      <Text fontStyle="italic" color="gray.700">
+        "{randomQuote}"
+      </Text>
     </Box>
   );
 };
